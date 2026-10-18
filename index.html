@@ -91,12 +91,14 @@
             gap: 10px;
         }
 
-        /* MINIATURA BALANZA DESCARGADA DE WEB */
-        .logo-img {
-            height: 32px;
-            width: auto;
-            object-fit: contain;
-            filter: drop-shadow(0 0 4px rgba(197, 160, 89, 0.5));
+        /* BALANZA EMBEBIDA EN VECTOR GOLD */
+        .logo-icon-gold {
+            color: var(--accent-gold);
+            font-size: 1.4rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            filter: drop-shadow(0 0 5px rgba(197, 160, 89, 0.4));
         }
 
         .logo span {
@@ -293,7 +295,7 @@
             font-size: 0.95rem;
         }
 
-        /* SOBRE LA FIRMA & DIRECCIÓN GENERAL (RESTAURADO EXACTO) */
+        /* SOBRE LA FIRMA & DIRECCIÓN GENERAL */
         .about-container {
             display: grid;
             grid-template-columns: 1fr 1.6fr;
@@ -331,7 +333,7 @@
             text-align: left;
         }
 
-        /* GALERÍA CORPORATIVA DE ALTO NIVEL (SIN MESAS TÉCNICAS) */
+        /* GALERÍA CORPORATIVA DE ALTO NIVEL */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -623,7 +625,7 @@
         /* BOTÓN FLOTANTE WHATSAPP REDUCIDO Y ELEVADO */
         .whatsapp-float {
             position: fixed;
-            bottom: 45px;
+            bottom: 35px;
             right: 20px;
             background-color: #25d366;
             color: #fff;
@@ -670,17 +672,17 @@
             .contact-container, .about-container { grid-template-columns: 1fr; padding: 1.5rem; }
             .about-avatar { margin-bottom: 1.8rem; }
             .action-fan { grid-template-columns: 1fr; }
-            .whatsapp-float { bottom: 35px; right: 12px; padding: 6px 12px; font-size: 0.74rem; }
+            .whatsapp-float { bottom: 30px; right: 12px; padding: 6px 12px; font-size: 0.74rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- HEADER CON MINIATURA DE LA BALANZA DESCARGADA -->
+    <!-- HEADER CON BALANZA EMBEBIDA DORADA -->
     <header>
         <div class="nav-container">
             <a href="#" class="logo">
-                <img src="https://img.icons8.com/isometric-line/100/c5a059/scale.png" alt="Balanza de la Justicia" class="logo-img">
+                <span class="logo-icon-gold"><i class="fa-solid fa-scale-balanced"></i></span>
                 PJGD <span>LEGAL & STRATEGIC CONSULTING</span>
             </a>
             <ul class="nav-links">
