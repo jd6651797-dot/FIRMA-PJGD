@@ -91,22 +91,11 @@
             gap: 12px;
         }
 
-        /* ISOTIPO NATIVO MONOGRAMA PJGD ELEGANTE */
-        .logo-monogram {
-            width: 36px;
-            height: 36px;
-            border: 1.5px solid var(--accent-gold);
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, rgba(197, 160, 89, 0.15) 0%, rgba(10, 14, 23, 0.9) 100%);
-            box-shadow: 0 0 10px rgba(197, 160, 89, 0.2);
-            font-family: var(--font-heading);
-            font-size: 0.85rem;
-            font-weight: 700;
-            color: var(--accent-gold);
-            letter-spacing: 1px;
+        .logo-img-custom {
+            height: 42px;
+            width: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 0 5px rgba(197, 160, 89, 0.4));
         }
 
         .logo span {
@@ -341,10 +330,10 @@
             text-align: left;
         }
 
-        /* GALERÍA REORGANIZADA (OPERACIONES & ENTORNO EJECUTIVO) */
+        /* GALERÍA / ENTORNO OPERATIVO (4 FOTOS EJECUTIVAS) */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1.5rem;
             margin-top: 2rem;
         }
@@ -382,14 +371,14 @@
             background: linear-gradient(0deg, rgba(10, 14, 23, 0.95) 0%, rgba(10, 14, 23, 0) 100%);
             padding: 1.2rem 1rem 0.8rem;
             color: var(--text-main);
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             font-weight: 600;
         }
 
         .gallery-caption span {
             display: block;
             color: var(--accent-gold);
-            font-size: 0.78rem;
+            font-size: 0.75rem;
             font-weight: 400;
         }
 
@@ -686,11 +675,11 @@
 </head>
 <body>
 
-    <!-- HEADER CON ISOTIPO MONOGRAMA DORADO PJGD -->
+    <!-- HEADER CON EL LOGO ELEGIDO EN GITHUB (logo.png) -->
     <header>
         <div class="nav-container">
             <a href="#" class="logo">
-                <div class="logo-monogram">PJGD</div>
+                <img src="logo.png" alt="Logo PJGD Legal" class="logo-img-custom" onerror="this.style.display='none'">
                 PJGD <span>LEGAL & STRATEGIC CONSULTING</span>
             </a>
             <ul class="nav-links">
@@ -777,10 +766,9 @@
         </div>
     </section>
 
-    <!-- DIRECCIÓN GENERAL & PERFIL RESTAURADOS TOTALMENTE -->
+    <!-- DIRECCIÓN GENERAL & PERFIL -->
     <section id="direccion">
         <div class="about-container">
-            <!-- COLUMNA IZQUIERDA: FOTO foto_pablo.jpg Y DATOS ORIGINALES -->
             <div class="about-avatar">
                 <img src="foto_pablo.jpg" alt="Abg. Pablo José González Duarte — Director Fundador" class="profile-img-large">
                 
@@ -803,7 +791,6 @@
                 </a>
             </div>
 
-            <!-- COLUMNA DERECHA: TEXTO COMPLETO SOBRE LA FIRMA RESTAURADO -->
             <div>
                 <div style="text-transform: uppercase; color: var(--accent-gold); font-size: 0.8rem; font-weight: 700; letter-spacing: 1px; margin-bottom: 0.5rem;">
                     Nuestra Firma & Ecosistema Jurídico
@@ -824,7 +811,7 @@
         </div>
     </section>
 
-    <!-- ENTORNO OPERATIVO & EJECUCIÓN (SOLO FOTOS RELEVANTES) -->
+    <!-- ENTORNO OPERATIVO & EJECUCIÓN (4 FOTOS EJECUTIVAS CON EL ABOGADO EN ESCRITORIO) -->
     <section id="galeria" style="padding-top: 20px;">
         <div class="section-header">
             <h2>Entorno Operativo & Ejecución Jurídica</h2>
@@ -833,7 +820,15 @@
 
         <div class="gallery-grid">
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80" alt="Firma de Contratos Mercantiles">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80" alt="Consultoría Senior y Firma de Contratos">
+                <div class="gallery-caption">
+                    Gestión Senior & Consultoría Directa
+                    <span>Análisis Estratégico & Firma de Acuerdos</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Blindaje Contractual Corporativo">
                 <div class="gallery-caption">
                     Blindaje Contractual & M&A
                     <span>Gobernanza & Acuerdos Societarios</span>
@@ -841,10 +836,18 @@
             </div>
 
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Consultoría Directa por Socios">
+                <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80" alt="Auditoría Normativa y Due Diligence">
                 <div class="gallery-caption">
-                    Atención Senior Personalizada
-                    <span>Protección de Activos & Due Diligence</span>
+                    Auditoría Preventiva & Due Diligence
+                    <span>Matriz de Riesgo ISO 31000</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80" alt="Negociación y Acuerdos de Inversión">
+                <div class="gallery-caption">
+                    Protección Patrimonial & Inversión
+                    <span>Estructuración Jurídica Transfronteriza</span>
                 </div>
             </div>
         </div>
@@ -1033,219 +1036,4 @@
             <div class="card-service hook-card" style="grid-column: 1 / -1;">
                 <div>
                     <i class="fa-solid fa-compass" style="color: var(--accent-gold);"></i>
-                    <h3 style="color: var(--accent-gold);">¿Su requerimiento o proyecto abarca múltiples áreas?</h3>
-                    <p style="color: var(--text-muted); margin-top: 0.5rem; font-size: 0.95rem;">
-                        El universo jurídico y corporativo actual exige soluciones a la medida. Si su grupo económico o fondo de inversión requiere un diagnóstico integral multidisciplinario, estructuramos el comité y la estrategia de blindaje adecuada.
-                    </p>
-                </div>
-                <a href="#contacto" class="btn-primary" style="margin-top: 1.5rem; align-self: flex-start; padding: 0.6rem 1.2rem; font-size: 0.85rem;">
-                    Solicitar Diagnóstico a la Medida <i class="fa-solid fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- METODOLOGÍA -->
-    <section id="metodologia">
-        <div class="section-header">
-            <h2>Metodología de Certidumbre Legal</h2>
-            <p>Nuestro enfoque sistemático garantiza respuestas rápidas, diagnósticos precisos y ejecución de alto rendimiento.</p>
-        </div>
-
-        <div class="steps-container">
-            <div class="step-box">
-                <div class="step-number">01</div>
-                <h4>Diagnóstico Inicial & Due Diligence</h4>
-                <p>Análisis riguroso de la situación legal y recopilación de antecedentes normativos.</p>
-            </div>
-            <div class="step-box">
-                <div class="step-number">02</div>
-                <h4>Matriz de Riesgo</h4>
-                <p>Identificación de vacíos normativos, impacto financiero y escenarios de resolución.</p>
-            </div>
-            <div class="step-box">
-                <div class="step-number">03</div>
-                <h4>Ejecución & Blindaje</h4>
-                <p>Implementación de la estrategia jurídica, redacción de contratos o defensa activa (Amparos, Exequátur, Hábeas Data).</p>
-            </div>
-            <div class="step-box">
-                <div class="step-number">04</div>
-                <h4>Monitoreo Continuo</h4>
-                <p>Acompañamiento posterior para garantizar la sostenibilidad y seguridad legal en el tiempo.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- INFO PRODUCTOS & PASARELA DIGITAL INTEGRADA -->
-    <section id="infoproductos">
-        <div class="info-products">
-            <div class="section-header">
-                <h2>Informes de Inteligencia Jurídica & Dossiers</h2>
-                <p>Recursos estratégicos redactados por especialistas para orientar la toma de decisiones ejecutivas e inversiones de capital.</p>
-            </div>
-
-            <div class="products-grid">
-                <div class="product-card">
-                    <div>
-                        <div class="product-badge">Informe Ejecutivo</div>
-                        <h3>Seguridad Jurídica en la Transición Energética Venezolana</h3>
-                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">Análisis integral del marco regulatorio, oportunidades fotovoltaicas y blindaje de proyectos energéticos.</p>
-                    </div>
-                    <a href="https://wa.me/584248271690?text=Hola,%20deseo%20adquirir/solicitar%20el%20Informe%20sobre%20Transici%C3%B3n%20Energ%C3%A9tica" target="_blank" class="btn-primary" style="margin-top: 1.5rem; padding: 0.6rem 1rem; font-size: 0.85rem; justify-content: center;">
-                        Solicitar Dossier
-                    </a>
-                </div>
-
-                <div class="product-card">
-                    <div>
-                        <div class="product-badge">Guía Práctica</div>
-                        <h3>Compliance & Auditoría Legal Preventiva para PYMES</h3>
-                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">Protocolo paso a paso para mitigar sanciones tributarias, laborales y operativas bajo ISO 31000.</p>
-                    </div>
-                    <a href="https://wa.me/584248271690?text=Hola,%20deseo%20solicitar%20la%20Gu%C3%ADa%20de%20Compliance%20Preventivo" target="_blank" class="btn-primary" style="margin-top: 1.5rem; padding: 0.6rem 1rem; font-size: 0.85rem; justify-content: center;">
-                        Solicitar Guía
-                    </a>
-                </div>
-
-                <div class="product-card">
-                    <div>
-                        <div class="product-badge">Especializado</div>
-                        <h3>Auditoría de Pólizas de Seguros (Salud y Vehículo)</h3>
-                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">Verificación de coberturas, cláusulas limitativas y reclamos legales ante aseguradoras.</p>
-                    </div>
-                    <a href="https://t.me/AuditoriaSegurosVE" target="_blank" class="btn-secondary" style="margin-top: 1.5rem; padding: 0.6rem 1rem; font-size: 0.85rem; text-align: center;">
-                        Acceder al Canal Telegram
-                    </a>
-                </div>
-            </div>
-
-            <!-- PASARELA DE PAGOS DIGITALES -->
-            <div class="payment-box">
-                <h4 style="color: var(--accent-gold); font-size: 1.05rem;">Canales Directos para Adquisición de Infoproductos y Honorarios</h4>
-                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.3rem;">Aceptamos pagos digitales nacionales e internacionales para liquidación inmediata sin comisiones intermedias.</p>
-                
-                <div class="payment-methods-icons">
-                    <div class="payment-pill"><i class="fa-solid fa-coins" style="color: var(--binance-yellow);"></i> Binance Pay (USDT)</div>
-                    <div class="payment-pill"><i class="fa-solid fa-wallet" style="color: #00d2ff;"></i> Airtm USD</div>
-                    <div class="payment-pill"><i class="fa-solid fa-building-columns" style="color: #25d366;"></i> BDV Pago Móvil</div>
-                </div>
-
-                <a href="https://wa.me/584248271690?text=Hola%20Abg.%20Pablo,%20deseo%20confirmar%20datos%20para%20pago%20por%20BinancePay/Airtm/BDV" target="_blank" class="btn-secondary" style="font-size: 0.8rem; padding: 0.4rem 1rem; display: inline-block;">
-                    <i class="fa-solid fa-qrcode"></i> Solicitar QR o Datos de Pago por WhatsApp
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACTO Y FORMULARIO B2B CALIFICADO -->
-    <section id="contacto">
-        <div class="contact-container">
-            <div>
-                <h2>Solicite una Evaluación Estratégica & Factibilidad</h2>
-                <p style="color: var(--text-muted); margin-top: 1rem; margin-bottom: 1.5rem;">
-                    Complete el formulario corporativo para iniciar la evaluación técnica bajo estricto protocolo de reserva. Toda solicitud es sometida a una verificación previa de conflicto de intereses (<i>Conflict Check</i>).
-                </p>
-                
-                <div style="display: flex; flex-direction: column; gap: 1rem; color: var(--text-muted);">
-                    <div><i class="fa-solid fa-envelope" style="color: var(--accent-gold); margin-right: 10px;"></i> pablogonzalezdigital@gmail.com</div>
-                    <div><i class="fa-solid fa-phone" style="color: var(--accent-gold); margin-right: 10px;"></i> +58 424-8271690</div>
-                    <div><i class="fa-solid fa-location-dot" style="color: var(--accent-gold); margin-right: 10px;"></i> Anzoátegui, Venezuela</div>
-                </div>
-            </div>
-
-            <form action="https://formsubmit.co/pablogonzalezdigital@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="Nuevo Requerimiento Prioritario B2B - PJGD Legal">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
-
-                <div class="form-group">
-                    <label for="nombre">Nombre y Apellido / Empresa u Organización</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Dr. Alejandro Mendoza / Grupo XYZ" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="rol">Condición o Rol del Solicitante</label>
-                    <select id="rol" name="rol" required>
-                        <option value="Dueno / Accionista Principal">Dueño / Accionista Principal</option>
-                        <option value="Miembro de Junta Directiva / Director General">Miembro de Junta Directiva / Director General</option>
-                        <option value="Apoderado Legal / Abogado In-House">Apoderado Legal / Abogado In-House</option>
-                        <option value="Gerente de Area / Administrador">Gerente de Área / Administrador</option>
-                        <option value="Consultor Externo / Asesor">Consultor Externo / Asesor</option>
-                        <option value="Particular / Cliente Senior">Particular / Cliente Senior</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Correo Electrónico Corporativo</label>
-                    <input type="email" id="email" name="email" placeholder="correo@empresa.com" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="telefono">WhatsApp / Teléfono Directo</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="+58 424..." required>
-                </div>
-
-                <div class="form-group">
-                    <label for="procedimiento">Procedimiento Específico / Área de Requerimiento</label>
-                    <select id="procedimiento" name="procedimiento" required>
-                        <option value="Auditoria & Due Diligence Pre-inversion / Adquisicion">Auditoría & Due Diligence Pre-inversión / Adquisición</option>
-                        <option value="Implementacion de Sistema Compliance / Norma ISO">Implementación de Sistema Compliance / Norma ISO</option>
-                        <option value="Redaccion & Blindaje de Contratos Internacionales / Mercantiles">Redacción & Blindaje de Contratos Internacionales / Mercantiles</option>
-                        <option value="Solicitud de Exequatur (Homologacion de Sentencia Extranjera)">Solicitud de Exequátur (Homologación de Sentencia Extranjera)</option>
-                        <option value="Amparo Constitucional / Recurso Contencioso Administrativo ante el TSJ">Amparo Constitucional / Recurso Contencioso Administrativo ante el TSJ</option>
-                        <option value="Auditoria de Politicas de Seguros / Reclamacion (@AuditoriaSegurosVE)">Auditoría de Políticas de Seguros / Reclamación (@AuditoriaSegurosVE)</option>
-                        <option value="Procedimiento de Habeas Data / Proteccion de Activos Digitales">Procedimiento de Hábeas Data / Protección de Activos Digitales</option>
-                        <option value="Regularizacion Tributaria & Planificacion Fiscal Corporativa">Regularización Tributaria & Planificación Fiscal Corporativa</option>
-                        <option value="Protocolo de Sucesion / Reorganizacion de Empresa Familiar">Protocolo de Sucesión / Reorganización de Empresa Familiar</option>
-                        <option value="Defensa ante Inspeccion / Procedimiento Sancionatorio de Entes Reguladores">Defensa ante Inspección / Procedimiento Sancionatorio de Entes Reguladores</option>
-                        <option value="Registro & Defensa de Propiedad Intelectual / Marcas / Patentes">Registro & Defensa de Propiedad Intelectual / Marcas / Patentes</option>
-                        <option value="Asesoria Legal Corporativa para Proyectos de Energia & Gas">Asesoría Legal Corporativa para Proyectos de Energía & Gas</option>
-                        <option value="Otro Procedimiento / Solicitud Especial">Otro Procedimiento / Solicitud Especial</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="estatus">Naturaleza y Estatus de la Contingencia</label>
-                    <select id="estatus" name="estatus" required>
-                        <option value="Diagnostico Preventivo & Planificacion">Diagnóstico Preventivo & Planificación</option>
-                        <option value="Inspeccion / Fiscalizacion Regulatoria en Curso">Inspección / Fiscalización Regulatoria en Curso</option>
-                        <option value="Procedimiento Judicial / Medida Cautelar Activa">Procedimiento Judicial / Medida Cautelar Activa</option>
-                        <option value="Negociacion / Transaccion Mercantil en Proceso">Negociación / Transacción Mercantil en Proceso</option>
-                        <option value="Requerimiento Extrajudicial / Conflicto de Intereses">Requerimiento Extrajudicial / Conflicto de Intereses</option>
-                        <option value="Proyecto de Inversion / Evaluaciones de Factibilidad">Proyecto de Inversión / Evaluaciones de Factibilidad</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="mensaje">Síntesis Ejecutiva del Caso</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describa brevemente el contexto de su consulta para el análisis de factibilidad..." required></textarea>
-                </div>
-
-                <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
-                    Enviar Solicitud de Evaluación
-                </button>
-            </form>
-        </div>
-    </section>
-
-    <!-- BOTÓN FLOTANTE WHATSAPP REDUCIDO Y ELEVADO -->
-    <a href="https://wa.me/584248271690?text=Hola%20Abg.%20Pablo%20Gonz%C3%A1lez,%20deseo%20solicitar%20asesor%C3%ADa%20legal%20prioritaria" class="whatsapp-float" target="_blank">
-        <i class="fa-brands fa-whatsapp" style="font-size: 1rem;"></i> WhatsApp Directo
-    </a>
-
-    <!-- FOOTER RESTAURADO CON TODOS SUS ENLACES -->
-    <footer>
-        <div class="footer-links">
-            <a href="#direccion">Nosotros</a>
-            <a href="#galeria">Entorno Operativo</a>
-            <a href="#servicios">Servicios 360°</a>
-            <a href="#infoproductos">Info-Productos</a>
-            <a href="https://www.linkedin.com/in/pablo-gonz%C3%A1lez-2b3a86288" target="_blank">LinkedIn</a>
-            <a href="https://t.me/AuditoriaSegurosVE" target="_blank">Telegram</a>
-            <a href="#contacto">Contacto Confidencial</a>
-        </div>
-        <p>&copy; 2026 PJGD Legal & Strategic Consulting | Pablo González & Asociados. Todos los derechos reservados. Seguridad Jurídica & Asesoría Estratégica.</p>
-    </footer>
-
-</body>
-</html>
+                    <h3 style="color: var(--accent-gold);">¿Su requerimiento o proyecto abarca
