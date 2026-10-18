@@ -78,27 +78,35 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
+            padding: 0.8rem 2rem;
         }
 
         .logo {
             font-family: var(--font-heading);
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             font-weight: 700;
             color: var(--text-main);
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
         }
 
-        /* BALANZA EMBEBIDA EN VECTOR GOLD */
-        .logo-icon-gold {
-            color: var(--accent-gold);
-            font-size: 1.4rem;
-            display: inline-flex;
+        /* ISOTIPO NATIVO MONOGRAMA PJGD ELEGANTE */
+        .logo-monogram {
+            width: 36px;
+            height: 36px;
+            border: 1.5px solid var(--accent-gold);
+            border-radius: 4px;
+            display: flex;
             align-items: center;
             justify-content: center;
-            filter: drop-shadow(0 0 5px rgba(197, 160, 89, 0.4));
+            background: linear-gradient(135deg, rgba(197, 160, 89, 0.15) 0%, rgba(10, 14, 23, 0.9) 100%);
+            box-shadow: 0 0 10px rgba(197, 160, 89, 0.2);
+            font-family: var(--font-heading);
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            letter-spacing: 1px;
         }
 
         .logo span {
@@ -333,11 +341,11 @@
             text-align: left;
         }
 
-        /* GALERÍA CORPORATIVA DE ALTO NIVEL */
+        /* GALERÍA REORGANIZADA (OPERACIONES & ENTORNO EJECUTIVO) */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 1.3rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
             margin-top: 2rem;
         }
 
@@ -346,7 +354,7 @@
             overflow: hidden;
             border-radius: 8px;
             border: 1px solid var(--border-color);
-            height: 230px;
+            height: 250px;
             transition: all 0.3s ease;
         }
 
@@ -374,14 +382,14 @@
             background: linear-gradient(0deg, rgba(10, 14, 23, 0.95) 0%, rgba(10, 14, 23, 0) 100%);
             padding: 1.2rem 1rem 0.8rem;
             color: var(--text-main);
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             font-weight: 600;
         }
 
         .gallery-caption span {
             display: block;
             color: var(--accent-gold);
-            font-size: 0.75rem;
+            font-size: 0.78rem;
             font-weight: 400;
         }
 
@@ -678,16 +686,16 @@
 </head>
 <body>
 
-    <!-- HEADER CON BALANZA EMBEBIDA DORADA -->
+    <!-- HEADER CON ISOTIPO MONOGRAMA DORADO PJGD -->
     <header>
         <div class="nav-container">
             <a href="#" class="logo">
-                <span class="logo-icon-gold"><i class="fa-solid fa-scale-balanced"></i></span>
+                <div class="logo-monogram">PJGD</div>
                 PJGD <span>LEGAL & STRATEGIC CONSULTING</span>
             </a>
             <ul class="nav-links">
                 <li><a href="#direccion">Nosotros</a></li>
-                <li><a href="#galeria">Sede & Firma</a></li>
+                <li><a href="#galeria">Entorno Operativo</a></li>
                 <li><a href="#servicios">Servicios 360°</a></li>
                 <li><a href="#metodologia">Metodología</a></li>
                 <li><a href="#infoproductos">Recursos & Dossiers</a></li>
@@ -816,30 +824,14 @@
         </div>
     </section>
 
-    <!-- GALERÍA CORPORATIVA DE ALTO NIVEL -->
+    <!-- ENTORNO OPERATIVO & EJECUCIÓN (SOLO FOTOS RELEVANTES) -->
     <section id="galeria" style="padding-top: 20px;">
         <div class="section-header">
-            <h2>Instalaciones & Entorno Corporativo</h2>
-            <p>Infraestructura ejecutiva diseñada para la atención confidencial de juntas directivas y reuniones estratégicas.</p>
+            <h2>Entorno Operativo & Ejecución Jurídica</h2>
+            <p>Atención senior y gestión directa para operaciones mercantiles, estructuración contractual y negociaciones ejecutivas.</p>
         </div>
 
         <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Sala de Conferencia y Juntas PJGD Legal">
-                <div class="gallery-caption">
-                    Sala de Juntas Directivas
-                    <span>Comisión de Resolución & Comité Estratégico</span>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Sede Corporativa PJGD Legal">
-                <div class="gallery-caption">
-                    Sede Operativa Principal
-                    <span>Centro Financiero & Comercial</span>
-                </div>
-            </div>
-
             <div class="gallery-item">
                 <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80" alt="Firma de Contratos Mercantiles">
                 <div class="gallery-caption">
@@ -1245,7 +1237,7 @@
     <footer>
         <div class="footer-links">
             <a href="#direccion">Nosotros</a>
-            <a href="#galeria">Sede & Firma</a>
+            <a href="#galeria">Entorno Operativo</a>
             <a href="#servicios">Servicios 360°</a>
             <a href="#infoproductos">Info-Productos</a>
             <a href="https://www.linkedin.com/in/pablo-gonz%C3%A1lez-2b3a86288" target="_blank">LinkedIn</a>
