@@ -78,23 +78,25 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1.2rem 2rem;
+            padding: 1rem 2rem;
         }
 
         .logo {
             font-family: var(--font-heading);
-            font-size: 1.35rem;
+            font-size: 1.3rem;
             font-weight: 700;
             color: var(--text-main);
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
         }
 
-        .logo-icon {
-            color: var(--accent-gold);
-            font-size: 1.5rem;
-            filter: drop-shadow(0 0 4px rgba(197, 160, 89, 0.4));
+        /* MINIATURA BALANZA DESCARGADA DE WEB */
+        .logo-img {
+            height: 32px;
+            width: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 0 4px rgba(197, 160, 89, 0.5));
         }
 
         .logo span {
@@ -108,7 +110,7 @@
         }
 
         .nav-links a {
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             font-weight: 500;
             color: var(--text-muted);
         }
@@ -121,10 +123,10 @@
             background: transparent;
             border: 1px solid var(--accent-gold);
             color: var(--accent-gold);
-            padding: 0.6rem 1.2rem;
+            padding: 0.5rem 1rem;
             border-radius: 4px;
             font-weight: 600;
-            font-size: 0.85rem;
+            font-size: 0.82rem;
         }
 
         .btn-cta-nav:hover {
@@ -135,7 +137,7 @@
         /* HERO SECTION */
         .hero {
             position: relative;
-            padding: 160px 2rem 60px;
+            padding: 150px 2rem 50px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -154,48 +156,48 @@
         }
 
         .hero-badge {
-            background-color: rgba(197, 160, 89, 0.2);
+            background-color: rgba(197, 160, 89, 0.18);
             border: 1px solid var(--accent-gold);
             color: var(--accent-gold);
-            padding: 0.4rem 1.2rem;
+            padding: 0.35rem 1.1rem;
             border-radius: 50px;
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             font-weight: 600;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.3rem;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         .hero h1 {
-            font-size: 3rem;
-            line-height: 1.2;
+            font-size: 2.8rem;
+            line-height: 1.25;
             margin-bottom: 1.2rem;
             max-width: 980px;
             color: #ffffff;
         }
 
         .hero p.hero-subtitle {
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             color: #d1d5db;
             max-width: 850px;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2.2rem;
         }
 
         /* ABANICO DE ACCIONES ESTRATÉGICAS */
         .action-fan {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
             gap: 1.2rem;
             width: 100%;
             max-width: 1100px;
             margin-top: 1rem;
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
         }
 
         .fan-card {
             background: rgba(17, 24, 39, 0.88);
             border: 1px solid var(--border-color);
-            padding: 1.5rem;
+            padding: 1.3rem;
             border-radius: 8px;
             text-align: left;
             transition: all 0.3s ease;
@@ -206,37 +208,37 @@
 
         .fan-card:hover {
             border-color: var(--accent-gold);
-            transform: translateY(-5px);
+            transform: translateY(-4px);
             background: rgba(31, 41, 55, 0.96);
         }
 
         .fan-card i {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             color: var(--accent-gold);
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
         }
 
         .fan-card h4 {
-            font-size: 1.05rem;
+            font-size: 1rem;
             color: var(--text-main);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
             font-family: var(--font-body);
             font-weight: 700;
         }
 
         .fan-card p {
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             color: var(--text-muted);
-            margin-bottom: 1.2rem;
+            margin-bottom: 1rem;
         }
 
         .fan-link {
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             font-weight: 700;
             color: var(--accent-gold);
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
         }
 
         /* BARRA DE INDICADORES */
@@ -248,20 +250,20 @@
             border-radius: 8px;
             padding: 1.2rem 2rem;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.2rem;
             text-align: center;
         }
 
         .stat-item h3 {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: var(--accent-gold);
             margin-bottom: 0.2rem;
         }
 
         .stat-item p {
-            font-size: 0.8rem;
+            font-size: 0.78rem;
             color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -269,28 +271,29 @@
 
         /* SECTIONS COMMON */
         section {
-            padding: 80px 2rem;
+            padding: 70px 2rem;
             max-width: 1200px;
             margin: 0 auto;
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
         }
 
         .section-header h2 {
-            font-size: 2.2rem;
-            margin-bottom: 1rem;
+            font-size: 2.1rem;
+            margin-bottom: 0.8rem;
         }
 
         .section-header p {
             color: var(--text-muted);
             max-width: 700px;
             margin: 0 auto;
+            font-size: 0.95rem;
         }
 
-        /* SOBRE LA FIRMA & DIRECCIÓN (TU FOTO RECTANGULAR ORIGINAL) */
+        /* SOBRE LA FIRMA & DIRECCIÓN GENERAL (RESTAURADO EXACTO) */
         .about-container {
             display: grid;
             grid-template-columns: 1fr 1.6fr;
@@ -328,12 +331,12 @@
             text-align: left;
         }
 
-        /* GALERÍA CORPORATIVA ALTO NIVEL */
+        /* GALERÍA CORPORATIVA DE ALTO NIVEL (SIN MESAS TÉCNICAS) */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.3rem;
+            margin-top: 2rem;
         }
 
         .gallery-item {
@@ -341,13 +344,13 @@
             overflow: hidden;
             border-radius: 8px;
             border: 1px solid var(--border-color);
-            height: 240px;
+            height: 230px;
             transition: all 0.3s ease;
         }
 
         .gallery-item:hover {
             border-color: var(--accent-gold);
-            transform: translateY(-5px);
+            transform: translateY(-4px);
         }
 
         .gallery-item img {
@@ -383,14 +386,14 @@
         /* CATALOG 360 GRID */
         .grid-360 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+            gap: 1.8rem;
         }
 
         .card-service {
             background-color: var(--bg-secondary);
             border: 1px solid var(--border-color);
-            padding: 2rem;
+            padding: 1.8rem;
             border-radius: 8px;
             transition: all 0.3s ease;
             display: flex;
@@ -401,17 +404,17 @@
 
         .card-service:hover {
             border-color: var(--accent-gold);
-            transform: translateY(-5px);
+            transform: translateY(-4px);
         }
 
         .card-service i {
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: var(--accent-gold);
-            margin-bottom: 1.2rem;
+            margin-bottom: 1rem;
         }
 
         .card-service h3 {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             margin-bottom: 0.8rem;
             color: var(--text-main);
         }
@@ -419,12 +422,12 @@
         .card-service ul {
             list-style: none;
             color: var(--text-muted);
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             margin-top: 0.5rem;
         }
 
         .card-service ul li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
             position: relative;
             padding-left: 1.2rem;
         }
@@ -444,7 +447,7 @@
             background: rgba(197, 160, 89, 0.15);
             border: 1px solid var(--accent-gold);
             color: var(--accent-gold);
-            font-size: 0.7rem;
+            font-size: 0.68rem;
             padding: 2px 8px;
             border-radius: 4px;
             font-weight: 700;
@@ -459,23 +462,23 @@
         /* METODOLOGÍA */
         .steps-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 1.3rem;
         }
 
         .step-box {
             background: var(--bg-secondary);
             border-left: 3px solid var(--accent-gold);
-            padding: 1.5rem;
+            padding: 1.3rem;
             border-radius: 0 8px 8px 0;
         }
 
         .step-number {
             font-family: var(--font-heading);
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             color: var(--accent-gold);
             font-weight: 700;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
         }
 
         /* INFO PRODUCTS SECTION & PASARELA DE PAGOS */
@@ -483,40 +486,40 @@
             background-color: var(--bg-secondary);
             border: 1px solid var(--border-color);
             border-radius: 12px;
-            padding: 3rem 2rem;
+            padding: 2.5rem 2rem;
         }
 
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
             gap: 1.5rem;
-            margin-top: 2rem;
+            margin-top: 1.8rem;
         }
 
         .product-card {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: 8px;
-            padding: 1.5rem;
+            padding: 1.4rem;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
 
         .product-badge {
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             color: var(--accent-gold);
             text-transform: uppercase;
             font-weight: 700;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
         }
 
         .payment-box {
-            margin-top: 2.5rem;
+            margin-top: 2.2rem;
             background: rgba(10, 14, 23, 0.8);
             border: 1px solid var(--accent-gold);
             border-radius: 8px;
-            padding: 1.5rem;
+            padding: 1.3rem;
             text-align: center;
         }
 
@@ -524,17 +527,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 1.5rem;
-            margin: 1rem 0;
+            gap: 1.2rem;
+            margin: 0.8rem 0;
             flex-wrap: wrap;
         }
 
         .payment-pill {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
-            padding: 0.4rem 0.8rem;
+            padding: 0.35rem 0.75rem;
             border-radius: 20px;
-            font-size: 0.8rem;
+            font-size: 0.78rem;
             color: var(--text-main);
             display: flex;
             align-items: center;
@@ -545,21 +548,21 @@
         .contact-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 3rem;
+            gap: 2.5rem;
             background: var(--bg-secondary);
             border: 1px solid var(--border-color);
-            padding: 3rem;
+            padding: 2.5rem;
             border-radius: 12px;
         }
 
         .form-group {
-            margin-bottom: 1.2rem;
+            margin-bottom: 1.1rem;
         }
 
         .form-group label {
             display: block;
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
+            margin-bottom: 0.4rem;
+            font-size: 0.85rem;
             color: var(--text-muted);
         }
 
@@ -567,12 +570,13 @@
         .form-group select, 
         .form-group textarea {
             width: 100%;
-            padding: 0.8rem;
+            padding: 0.75rem;
             background: var(--bg-primary);
             border: 1px solid var(--border-color);
             border-radius: 4px;
             color: var(--text-main);
             font-family: inherit;
+            font-size: 0.9rem;
         }
 
         .form-group input:focus, 
@@ -585,14 +589,15 @@
         .btn-primary {
             background-color: var(--accent-gold);
             color: var(--bg-primary);
-            padding: 0.9rem 2rem;
+            padding: 0.85rem 1.8rem;
             border-radius: 4px;
             font-weight: 700;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             border: none;
             cursor: pointer;
+            font-size: 0.9rem;
         }
 
         .btn-primary:hover {
@@ -604,9 +609,10 @@
             background-color: transparent;
             border: 1px solid var(--border-color);
             color: var(--text-main);
-            padding: 0.9rem 2rem;
+            padding: 0.85rem 1.8rem;
             border-radius: 4px;
             font-weight: 600;
+            font-size: 0.88rem;
         }
 
         .btn-secondary:hover {
@@ -614,65 +620,67 @@
             color: var(--accent-gold);
         }
 
-        /* BOTÓN FLOTANTE WHATSAPP REAJUSTADO */
+        /* BOTÓN FLOTANTE WHATSAPP REDUCIDO Y ELEVADO */
         .whatsapp-float {
             position: fixed;
-            bottom: 40px;
-            right: 25px;
+            bottom: 45px;
+            right: 20px;
             background-color: #25d366;
             color: #fff;
             border-radius: 50px;
-            padding: 8px 16px;
+            padding: 7px 14px;
             font-weight: 700;
             display: flex;
             align-items: center;
-            gap: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            gap: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
             z-index: 9999;
-            font-size: 0.82rem;
+            font-size: 0.78rem;
+            max-width: 160px;
             white-space: nowrap;
         }
 
         .whatsapp-float:hover {
             background-color: #1eb954;
-            transform: scale(1.05);
+            transform: scale(1.04);
         }
 
         /* FOOTER */
         footer {
             border-top: 1px solid var(--border-color);
-            padding: 3rem 2rem 1.5rem;
+            padding: 2.5rem 2rem 1.5rem;
             background-color: var(--bg-primary);
             text-align: center;
             color: var(--text-muted);
-            font-size: 0.85rem;
+            font-size: 0.82rem;
         }
 
         .footer-links {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
-            margin-bottom: 1.5rem;
+            gap: 1.4rem;
+            margin-bottom: 1.2rem;
+            flex-wrap: wrap;
         }
 
         /* RESPONSIVE */
         @media (max-width: 768px) {
             .nav-links { display: none; }
-            .hero h1 { font-size: 2.1rem; }
+            .hero h1 { font-size: 2rem; }
             .contact-container, .about-container { grid-template-columns: 1fr; padding: 1.5rem; }
-            .about-avatar { margin-bottom: 2rem; }
+            .about-avatar { margin-bottom: 1.8rem; }
             .action-fan { grid-template-columns: 1fr; }
-            .whatsapp-float { bottom: 30px; right: 15px; padding: 6px 14px; font-size: 0.78rem; }
+            .whatsapp-float { bottom: 35px; right: 12px; padding: 6px 12px; font-size: 0.74rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- HEADER CON ISOTIPO DE LA BALANZA -->
+    <!-- HEADER CON MINIATURA DE LA BALANZA DESCARGADA -->
     <header>
         <div class="nav-container">
             <a href="#" class="logo">
-                <i class="fa-solid fa-scale-balanced logo-icon"></i>
+                <img src="https://img.icons8.com/isometric-line/100/c5a059/scale.png" alt="Balanza de la Justicia" class="logo-img">
                 PJGD <span>LEGAL & STRATEGIC CONSULTING</span>
             </a>
             <ul class="nav-links">
@@ -689,7 +697,7 @@
         </div>
     </header>
 
-    <!-- HERO SECTION ORIGINAL -->
+    <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-content-wrapper">
             <div class="hero-badge">Pablo González & Asociados — PJGD Legal & Strategic Consulting</div>
@@ -699,7 +707,7 @@
             </p>
         </div>
 
-        <!-- ABANICO DE ACCIONES DE CONVERSIÓN ORIGINAL -->
+        <!-- ABANICO DE ACCIONES -->
         <div class="action-fan">
             <a href="#contacto" class="fan-card">
                 <div>
@@ -707,7 +715,7 @@
                     <h4>1. Evaluación de Riesgo</h4>
                     <p>Agende un diagnóstico confidencial para auditar contingencias en su empresa.</p>
                 </div>
-                <span class="fan-link">Solicitar Agendamiento <i class="fa-solid fa-arrow-right"></i></span>
+                <span class="fan-link">Solicitar Evaluación Estratégica <i class="fa-solid fa-arrow-right"></i></span>
             </a>
 
             <a href="https://wa.me/584248271690?text=Hola%20Abg.%20Pablo%20Gonz%C3%A1lez,%20requiero%20Atenci%C3%B3n%20Jur%C3%ADdica%20Corporativa%20Urgente" target="_blank" class="fan-card">
@@ -794,7 +802,7 @@
                     Gobernanza Integral & Blindaje Corporativo de Alto Nivel
                 </h2>
                 <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.98rem; text-align: justify;">
-                    En <strong>PJGD Legal & Strategic Consulting</strong> operamos como una plataforma y mesa técnica multidisciplinaria dedicada al blindaje corporativo, la gestión de riesgos complejos y la alta consultoría regulatoria. Entendemos que, en un entorno dinámico y de alta exigencia, la certeza jurídica no es un costo operativo: es la <strong>garantía estratégica de continuidad, solvencia y expansión</strong> para su patrimonio e inversión.
+                    En <strong>PJGD Legal & Strategic Consulting</strong> operamos como una plataforma y comisión especializada multidisciplinaria dedicada al blindaje corporativo, la gestión de riesgos complejos y la alta consultoría regulatoria. Entendemos que, en un entorno dinámico y de alta exigencia, la certeza jurídica no es un costo operativo: es la <strong>garantía estratégica de continuidad, solvencia y expansión</strong> para su patrimonio e inversión.
                 </p>
                 <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.98rem; text-align: justify;">
                     Bajo un modelo de gobernanza integral que fusiona el conocimiento práctico tribunalicio, el Derecho Constitucional, la Fiscalidad Estratégica, el Compliance ISO y la Seguridad Regulatoria Energética, integramos la defensa técnica en <strong>Derecho Penal Económico</strong>, <strong>Derecho Civil, Patrimonial y Digital</strong> para transformar la complejidad legal en una ventaja competitiva inexpugnable.
@@ -806,7 +814,7 @@
         </div>
     </section>
 
-    <!-- GALERÍA CORPORATIVA CORREGIDA -->
+    <!-- GALERÍA CORPORATIVA DE ALTO NIVEL -->
     <section id="galeria" style="padding-top: 20px;">
         <div class="section-header">
             <h2>Instalaciones & Entorno Corporativo</h2>
@@ -848,7 +856,7 @@
         </div>
     </section>
 
-    <!-- CATÁLOGO 360° ORIGINAL -->
+    <!-- CATÁLOGO 360° -->
     <section id="servicios">
         <div class="section-header">
             <h2>Catálogo Estratégico de Servicios 360°</h2>
@@ -1027,13 +1035,13 @@
                 </div>
             </div>
 
-            <!-- TARJETA GANCHO ORIGINAL -->
+            <!-- TARJETA GANCHO -->
             <div class="card-service hook-card" style="grid-column: 1 / -1;">
                 <div>
                     <i class="fa-solid fa-compass" style="color: var(--accent-gold);"></i>
                     <h3 style="color: var(--accent-gold);">¿Su requerimiento o proyecto abarca múltiples áreas?</h3>
                     <p style="color: var(--text-muted); margin-top: 0.5rem; font-size: 0.95rem;">
-                        El universo jurídico y corporativo actual exige soluciones a la medida. Si su grupo económico o fondo de inversión requiere un diagnóstico integral multidisciplinario, estructuramos la mesa técnica y la estrategia de blindaje adecuada.
+                        El universo jurídico y corporativo actual exige soluciones a la medida. Si su grupo económico o fondo de inversión requiere un diagnóstico integral multidisciplinario, estructuramos el comité y la estrategia de blindaje adecuada.
                     </p>
                 </div>
                 <a href="#contacto" class="btn-primary" style="margin-top: 1.5rem; align-self: flex-start; padding: 0.6rem 1.2rem; font-size: 0.85rem;">
@@ -1043,7 +1051,7 @@
         </div>
     </section>
 
-    <!-- METODOLOGÍA ORIGINAL -->
+    <!-- METODOLOGÍA -->
     <section id="metodologia">
         <div class="section-header">
             <h2>Metodología de Certidumbre Legal</h2>
@@ -1226,12 +1234,12 @@
         </div>
     </section>
 
-    <!-- WHATSAPP FLOAT REAJUSTADO Y OPTIMIZADO -->
+    <!-- BOTÓN FLOTANTE WHATSAPP REDUCIDO Y ELEVADO -->
     <a href="https://wa.me/584248271690?text=Hola%20Abg.%20Pablo%20Gonz%C3%A1lez,%20deseo%20solicitar%20asesor%C3%ADa%20legal%20prioritaria" class="whatsapp-float" target="_blank">
-        <i class="fa-brands fa-whatsapp" style="font-size: 1.1rem;"></i> WhatsApp Directo
+        <i class="fa-brands fa-whatsapp" style="font-size: 1rem;"></i> WhatsApp Directo
     </a>
 
-    <!-- FOOTER ORIGINAL -->
+    <!-- FOOTER RESTAURADO CON TODOS SUS ENLACES -->
     <footer>
         <div class="footer-links">
             <a href="#direccion">Nosotros</a>
