@@ -61,7 +61,7 @@
             transition: all 0.3s ease;
         }
 
-        /* HEADER & NAVEGACIÓN */
+        /* HEADER & NAVEGACIÓN - LOGO AMPLIADO A 85PX */
         header {
             position: fixed;
             top: 0;
@@ -78,24 +78,24 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0.8rem 2rem;
+            padding: 0.5rem 2rem;
         }
 
         .logo {
             font-family: var(--font-heading);
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             font-weight: 700;
             color: var(--text-main);
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 15px;
         }
 
         .logo-img-custom {
-            height: 58px;
+            height: 85px;
             width: auto;
             object-fit: contain;
-            filter: drop-shadow(0 0 6px rgba(197, 160, 89, 0.45));
+            filter: drop-shadow(0 0 10px rgba(197, 160, 89, 0.6));
         }
 
         .logo span {
@@ -136,7 +136,7 @@
         /* HERO SECTION */
         .hero {
             position: relative;
-            padding: 160px 2rem 50px;
+            padding: 175px 2rem 50px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -332,7 +332,7 @@
             text-align: left;
         }
 
-        /* ENTORNO OPERATIVO & EJECUCIÓN (5 CASILLAS VISUALES) */
+        /* ENTORNO OPERATIVO & EJECUCIÓN (5 CASILLAS REVISADAS Y CORREGIDAS) */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -345,7 +345,7 @@
             overflow: hidden;
             border-radius: 8px;
             border: 1px solid var(--border-color);
-            height: 250px;
+            height: 260px;
             transition: all 0.3s ease;
             background: var(--bg-secondary);
         }
@@ -672,12 +672,13 @@
             .about-avatar { margin-bottom: 1.8rem; }
             .action-fan { grid-template-columns: 1fr; }
             .gallery-grid { grid-template-columns: 1fr 1fr; }
+            .logo-img-custom { height: 65px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- HEADER CON EL LOGO EN PNG TRANSPARENTE DE 58PX CON RESPLANDOR -->
+    <!-- HEADER CON EL LOGO AMPLIADO A 85PX DE ALTURA -->
     <header>
         <div class="nav-container">
             <a href="#" class="logo">
@@ -813,7 +814,7 @@
         </div>
     </section>
 
-    <!-- ENTORNO OPERATIVO & EJECUCIÓN (5 CASILLAS VISUALES) -->
+    <!-- ENTORNO OPERATIVO & EJECUCIÓN (5 CASILLAS - REVISIÓN Y SUSTITUCIÓN COMPLETA) -->
     <section id="galeria" style="padding-top: 20px;">
         <div class="section-header">
             <h2>Entorno Operativo & Ejecución Jurídica</h2>
@@ -821,25 +822,25 @@
         </div>
 
         <div class="gallery-grid">
-            <!-- Casilla 1: Dama de la Justicia -->
+            <!-- Casilla 1: Dama de la Justicia (Sustituye al isotipo) -->
             <div class="gallery-item">
                 <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80" alt="Justitia - Simbolo del Derecho">
                 <div class="gallery-caption">
-                    Identidad Institucional & Sello Legal
-                    <span>Garantía de Respaldo Corporativo</span>
+                    Dama Ciegar / Justitia
+                    <span>Simbolismo de la Justicia & Tutela Jurídica</span>
                 </div>
             </div>
 
-            <!-- Casilla 2: Abogado senior en escritorio -->
+            <!-- Casilla 2: Sustituida por Asesoría y Consultoría Ejecutiva Senior -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80" alt="Gestión Senior y Consultoría Directa">
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" alt="Consultoría Ejecutiva Senior">
                 <div class="gallery-caption">
                     Gestión Senior & Consultoría Directa
                     <span>Análisis Estratégico & Firma de Acuerdos</span>
                 </div>
             </div>
 
-            <!-- Casilla 3: Reunión ejecutiva -->
+            <!-- Casilla 3: Reunión ejecutiva de negocios / M&A -->
             <div class="gallery-item">
                 <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Blindaje Contractual y M&A">
                 <div class="gallery-caption">
@@ -848,9 +849,9 @@
                 </div>
             </div>
 
-            <!-- Casilla 4: Auditoría preventiva -->
+            <!-- Casilla 4: Sustituida por Arquitectura de Blindaje y Matriz de Riesgo -->
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80" alt="Auditoría Preventiva y Due Diligence">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Blindaje Patrimonial e Inspección Normativa">
                 <div class="gallery-caption">
                     Auditoría Preventiva & Due Diligence
                     <span>Matriz de Riesgo ISO 31000</span>
