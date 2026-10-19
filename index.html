@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PJGD Legal & Strategic Consulting | Pablo González & Asociados</title>
-    <meta name="description" content="Firma web jurídica multidisciplinaria. Especialistas en Derecho Corporativo, M&A, Transición Energética, Compliance ISO 37001/31000, Derecho Fiscal, Garantías Constitucionales y Evidencia Digital.">
+    <meta name="description" content="Firma consultora e institución jurídica especializada en Blindaje Corporativo, Tutela Patrimonial, Compliance ISO (37001, 31000, 14001, 27001), Derecho Fiscal, Litigio Complejo y Energía e Hidrocarburos.">
     
     <meta property="og:title" content="PJGD Legal & Strategic Consulting | Pablo González & Asociados">
-    <meta property="og:description" content="Seguridad Jurídica, Blindaje Corporativo, Compliance ISO y Estrategia Multidisciplinaria para Empresas e Inversionistas.">
+    <meta property="og:description" content="Blindaje Corporativo, Tutela Patrimonial & Consultoría en Energía e Hidrocarburos. Seguridad Jurídica integral para empresas e inversionistas.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="foto_pablo.jpg">
     
@@ -61,12 +61,12 @@
             transition: all 0.3s ease;
         }
 
-        /* HEADER & NAV */
+        /* HEADER & NAVEGACIÓN */
         header {
             position: fixed;
             top: 0;
             width: 100%;
-            background-color: rgba(10, 14, 23, 0.95);
+            background-color: rgba(10, 14, 23, 0.96);
             backdrop-filter: blur(10px);
             z-index: 1000;
             border-bottom: 1px solid var(--border-color);
@@ -83,7 +83,7 @@
 
         .logo {
             font-family: var(--font-heading);
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             font-weight: 700;
             color: var(--text-main);
             display: flex;
@@ -92,10 +92,10 @@
         }
 
         .logo-img-custom {
-            height: 42px;
+            height: 58px;
             width: auto;
             object-fit: contain;
-            filter: drop-shadow(0 0 5px rgba(197, 160, 89, 0.4));
+            filter: drop-shadow(0 0 6px rgba(197, 160, 89, 0.45));
         }
 
         .logo span {
@@ -122,10 +122,10 @@
             background: transparent;
             border: 1px solid var(--accent-gold);
             color: var(--accent-gold);
-            padding: 0.5rem 1rem;
+            padding: 0.55rem 1.1rem;
             border-radius: 4px;
             font-weight: 600;
-            font-size: 0.82rem;
+            font-size: 0.85rem;
         }
 
         .btn-cta-nav:hover {
@@ -136,7 +136,7 @@
         /* HERO SECTION */
         .hero {
             position: relative;
-            padding: 150px 2rem 50px;
+            padding: 160px 2rem 50px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -158,7 +158,7 @@
             background-color: rgba(197, 160, 89, 0.18);
             border: 1px solid var(--accent-gold);
             color: var(--accent-gold);
-            padding: 0.35rem 1.1rem;
+            padding: 0.38rem 1.2rem;
             border-radius: 50px;
             font-size: 0.82rem;
             font-weight: 600;
@@ -168,21 +168,23 @@
         }
 
         .hero h1 {
-            font-size: 2.8rem;
+            font-size: 2.7rem;
             line-height: 1.25;
             margin-bottom: 1.2rem;
-            max-width: 980px;
+            max-width: 1000px;
             color: #ffffff;
         }
 
         .hero p.hero-subtitle {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: #d1d5db;
-            max-width: 850px;
+            max-width: 950px;
             margin-bottom: 2.2rem;
+            text-align: justify;
+            line-height: 1.7;
         }
 
-        /* ABANICO DE ACCIONES ESTRATÉGICAS */
+        /* ABANICO DE ACCIONES */
         .action-fan {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -255,7 +257,7 @@
         }
 
         .stat-item h3 {
-            font-size: 1.5rem;
+            font-size: 1.45rem;
             font-weight: 700;
             color: var(--accent-gold);
             margin-bottom: 0.2rem;
@@ -268,7 +270,7 @@
             letter-spacing: 0.5px;
         }
 
-        /* SECTIONS COMMON */
+        /* SECCIONES */
         section {
             padding: 70px 2rem;
             max-width: 1200px;
@@ -287,7 +289,7 @@
 
         .section-header p {
             color: var(--text-muted);
-            max-width: 700px;
+            max-width: 750px;
             margin: 0 auto;
             font-size: 0.95rem;
         }
@@ -330,11 +332,11 @@
             text-align: left;
         }
 
-        /* GALERÍA / ENTORNO OPERATIVO (4 FOTOS EJECUTIVAS) */
+        /* ENTORNO OPERATIVO & EJECUCIÓN (5 CASILLAS VISUALES) */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.3rem;
             margin-top: 2rem;
         }
 
@@ -345,6 +347,7 @@
             border: 1px solid var(--border-color);
             height: 250px;
             transition: all 0.3s ease;
+            background: var(--bg-secondary);
         }
 
         .gallery-item:hover {
@@ -369,20 +372,20 @@
             left: 0;
             right: 0;
             background: linear-gradient(0deg, rgba(10, 14, 23, 0.95) 0%, rgba(10, 14, 23, 0) 100%);
-            padding: 1.2rem 1rem 0.8rem;
+            padding: 1.2rem 0.9rem 0.8rem;
             color: var(--text-main);
-            font-size: 0.88rem;
+            font-size: 0.85rem;
             font-weight: 600;
         }
 
         .gallery-caption span {
             display: block;
             color: var(--accent-gold);
-            font-size: 0.75rem;
+            font-size: 0.74rem;
             font-weight: 400;
         }
 
-        /* CATALOG 360 GRID */
+        /* CATÁLOGO 360° GRID */
         .grid-360 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
@@ -413,7 +416,7 @@
         }
 
         .card-service h3 {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             margin-bottom: 0.8rem;
             color: var(--text-main);
         }
@@ -480,7 +483,7 @@
             margin-bottom: 0.4rem;
         }
 
-        /* INFO PRODUCTS SECTION & PASARELA DE PAGOS */
+        /* INFO PRODUCTOS & PASARELA DE PAGOS */
         .info-products {
             background-color: var(--bg-secondary);
             border: 1px solid var(--border-color);
@@ -490,7 +493,7 @@
 
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1.5rem;
             margin-top: 1.8rem;
         }
@@ -619,29 +622,28 @@
             color: var(--accent-gold);
         }
 
-        /* BOTÓN FLOTANTE WHATSAPP REDUCIDO Y ELEVADO */
-        .whatsapp-float {
+        /* BOTÓN FLOTANTE WHATSAPP COMPACTO (45px) */
+        .whatsapp-float-compact {
             position: fixed;
-            bottom: 35px;
+            bottom: 30px;
             right: 20px;
+            width: 45px;
+            height: 45px;
             background-color: #25d366;
             color: #fff;
-            border-radius: 50px;
-            padding: 7px 14px;
-            font-weight: 700;
+            border-radius: 50%;
             display: flex;
             align-items: center;
-            gap: 6px;
+            justify-content: center;
             box-shadow: 0 4px 12px rgba(0,0,0,0.5);
             z-index: 9999;
-            font-size: 0.78rem;
-            max-width: 160px;
-            white-space: nowrap;
+            font-size: 1.3rem;
+            transition: all 0.3s ease;
         }
 
-        .whatsapp-float:hover {
+        .whatsapp-float-compact:hover {
             background-color: #1eb954;
-            transform: scale(1.04);
+            transform: scale(1.1);
         }
 
         /* FOOTER */
@@ -665,17 +667,17 @@
         /* RESPONSIVE */
         @media (max-width: 768px) {
             .nav-links { display: none; }
-            .hero h1 { font-size: 2rem; }
+            .hero h1 { font-size: 1.9rem; }
             .contact-container, .about-container { grid-template-columns: 1fr; padding: 1.5rem; }
             .about-avatar { margin-bottom: 1.8rem; }
             .action-fan { grid-template-columns: 1fr; }
-            .whatsapp-float { bottom: 30px; right: 12px; padding: 6px 12px; font-size: 0.74rem; }
+            .gallery-grid { grid-template-columns: 1fr 1fr; }
         }
     </style>
 </head>
 <body>
 
-    <!-- HEADER CON EL LOGO ELEGIDO EN GITHUB (logo.png) -->
+    <!-- HEADER CON EL LOGO EN PNG TRANSPARENTE DE 58PX CON RESPLANDOR -->
     <header>
         <div class="nav-container">
             <a href="#" class="logo">
@@ -690,8 +692,8 @@
                 <li><a href="#infoproductos">Recursos & Dossiers</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
-            <a href="https://wa.me/584248271690?text=Hola%20Abg.%20Pablo%20Gonz%C3%A1lez,%20deseo%20solicitar%20una%20Evaluaci%C3%B3n%20de%20Riesgo%20Jur%C3%ADdico" target="_blank" class="btn-cta-nav">
-                <i class="fa-brands fa-whatsapp"></i> Consulta Prioritaria
+            <a href="https://wa.me/584248271690?text=Hola%20Abg.%20Pablo%20Gonz%C3%A1lez,%20deseo%20solicitar%20una%20Consulta%20Estrat%C3%A9gica" target="_blank" class="btn-cta-nav">
+                <i class="fa-brands fa-whatsapp"></i> Solicitar Consulta Estratégica
             </a>
         </div>
     </header>
@@ -699,10 +701,10 @@
     <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-content-wrapper">
-            <div class="hero-badge">Pablo González & Asociados — PJGD Legal & Strategic Consulting</div>
-            <h1>Seguridad Jurídica, Blindaje Corporativo & Transición Energética</h1>
+            <div class="hero-badge">Pablo González & Asociados — Consultoría Estratégica & Compliance</div>
+            <h1>Blindaje Corporativo, Tutela Patrimonial & Consultoría en Energía e Hidrocarburos</h1>
             <p class="hero-subtitle">
-                Transformamos vacíos normativos en certezas operativas. Consultoría estratégica integral en Compliance ISO 37001/31000, estructuración tributaria, litigios complejos y proyectos de inversión.
+                Transformamos vacíos normativos en certezas operativas. Consultoría estratégica integral en Sistemas de Gestión de Cumplimiento e Integridad bajo estándares internacionales ISO 37001 (Anticorrupción), ISO 31000 (Gestión de Riesgo), ISO 14001 (Gestión Ambiental) e ISO 27001 (Seguridad de la Información). Estructuración Fiscal Preventiva, Optimización Tributaria & Matriz de Riesgo Fiscal. Defensa Técnica Penal-Económica, Contencioso-Administrativa & Litigio Civil-Patrimonial, y Seguridad Jurídica para Proyectos de Inversión.
             </p>
         </div>
 
@@ -714,7 +716,7 @@
                     <h4>1. Evaluación de Riesgo</h4>
                     <p>Agende un diagnóstico confidencial para auditar contingencias en su empresa.</p>
                 </div>
-                <span class="fan-link">Solicitar Evaluación Estratégica <i class="fa-solid fa-arrow-right"></i></span>
+                <span class="fan-link">Solicitar Evaluación <i class="fa-solid fa-arrow-right"></i></span>
             </a>
 
             <a href="https://wa.me/584248271690?text=Hola%20Abg.%20Pablo%20Gonz%C3%A1lez,%20requiero%20Atenci%C3%B3n%20Jur%C3%ADdica%20Corporativa%20Urgente" target="_blank" class="fan-card">
@@ -730,7 +732,7 @@
                 <div>
                     <i class="fa-solid fa-file-pdf"></i>
                     <h4>3. Dossiers & Guías</h4>
-                    <p>Acceda a informes de inteligencia sobre Transición Energética y Compliance.</p>
+                    <p>Acceda a informes de inteligencia sobre Transición Energética, Compliance y Gestión de Riesgo.</p>
                 </div>
                 <span class="fan-link">Explorar Recursos <i class="fa-solid fa-arrow-right"></i></span>
             </a>
@@ -749,11 +751,11 @@
         <div class="stats-bar">
             <div class="stat-item">
                 <h3>100%</h3>
-                <p>Conformidad Normativa</p>
+                <p>Conformidad Normativa & Prevención</p>
             </div>
             <div class="stat-item">
                 <h3>Matriz ISO</h3>
-                <p>Estándares 37001 / 31000</p>
+                <p>Estándares 37001 / 31000 / 14001 / 27001</p>
             </div>
             <div class="stat-item">
                 <h3>360°</h3>
@@ -761,7 +763,7 @@
             </div>
             <div class="stat-item">
                 <h3>Senior</h3>
-                <p>Atención Directa por Socios</p>
+                <p>Atención Directa por Especialistas & Consultores Senior</p>
             </div>
         </div>
     </section>
@@ -770,270 +772,20 @@
     <section id="direccion">
         <div class="about-container">
             <div class="about-avatar">
-                <img src="foto_pablo.jpg" alt="Abg. Pablo José González Duarte — Director Fundador" class="profile-img-large">
+                <img src="foto_pablo.jpg" alt="Abg. Pablo José González Duarte" class="profile-img-large">
                 
-                <h3 style="font-size: 1.25rem; color: var(--text-main); margin-bottom: 0.2rem;">Abg. Pablo José González Duarte</h3>
-                <p style="color: var(--accent-gold); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.8rem;">
-                    Director Fundador & Consultor Estratégico
+                <h3 style="font-size: 1.2rem; color: var(--text-main); margin-bottom: 0.2rem;">Abg. Pablo José González Duarte</h3>
+                <p style="color: var(--accent-gold); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.8rem;">
+                    Consultor Principal & Director de Estrategia Jurídica
                 </p>
 
                 <div style="text-align: left; font-size: 0.88rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1rem;">
-                    <div><i class="fa-solid fa-graduation-cap" style="color: var(--accent-gold); margin-right: 8px;"></i> <strong>Formación:</strong> Abogado egresado de la Universidad Santa María (USM - Núcleo Oriente).</div>
-                    <div><i class="fa-solid fa-landmark" style="color: var(--accent-gold); margin-right: 8px;"></i> <strong>Práctica Judicial:</strong> Experiencia tribunalicia en el Palacio de Justicia del Estado Anzoátegui (TSJ).</div>
+                    <div><i class="fa-solid fa-graduation-cap" style="color: var(--accent-gold); margin-right: 8px;"></i> <strong>Formación:</strong> Egresado de la prestigiosa Universidad Santa María (USM - Núcleo Oriente).</div>
+                    <div><i class="fa-solid fa-landmark" style="color: var(--accent-gold); margin-right: 8px;"></i> <strong>Práctica Judicial:</strong> Extensa experiencia judicial y práctica tribunalicia en el Palacio de Justicia del Estado Anzoátegui (TSJ).</div>
                 </div>
 
                 <div class="quote-box">
                     "La certeza jurídica no se improvisa; se construye mediante la combinación rigurosa de técnica legal, visión estratégica y un compromiso absoluto con el patrimonio de nuestros representados."
                 </div>
 
-                <a href="https://www.linkedin.com/in/pablo-gonz%C3%A1lez-2b3a86288" target="_blank" class="btn-secondary" style="font-size: 0.85rem; padding: 0.6rem 1rem; width: 100%; text-align: center; display: inline-block; margin-top: 0.5rem;">
-                    <i class="fa-brands fa-linkedin"></i> Perfil Profesional en LinkedIn
-                </a>
-            </div>
-
-            <div>
-                <div style="text-transform: uppercase; color: var(--accent-gold); font-size: 0.8rem; font-weight: 700; letter-spacing: 1px; margin-bottom: 0.5rem;">
-                    Nuestra Firma & Ecosistema Jurídico
-                </div>
-                <h2 style="font-size: 1.8rem; margin-bottom: 1.2rem; color: #ffffff;">
-                    Gobernanza Integral & Blindaje Corporativo de Alto Nivel
-                </h2>
-                <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.98rem; text-align: justify;">
-                    En <strong>PJGD Legal & Strategic Consulting</strong> operamos como una plataforma y comisión especializada multidisciplinaria dedicada al blindaje corporativo, la gestión de riesgos complejos y la alta consultoría regulatoria. Entendemos que, en un entorno dinámico y de alta exigencia, la certeza jurídica no es un costo operativo: es la <strong>garantía estratégica de continuidad, solvencia y expansión</strong> para su patrimonio e inversión.
-                </p>
-                <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.98rem; text-align: justify;">
-                    Bajo un modelo de gobernanza integral que fusiona el conocimiento práctico tribunalicio, el Derecho Constitucional, la Fiscalidad Estratégica, el Compliance ISO y la Seguridad Regulatoria Energética, integramos la defensa técnica en <strong>Derecho Penal Económico</strong>, <strong>Derecho Civil, Patrimonial y Digital</strong> para transformar la complejidad legal en una ventaja competitiva inexpugnable.
-                </p>
-                <p style="color: var(--text-muted); font-size: 0.98rem; text-align: justify; font-weight: 600; color: var(--text-main);">
-                    No solo gestionamos contingencias; diseñamos la estructura jurídica que protege a las organizaciones, sus directivos y sus activos frente a cualquier escenario de riesgo.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ENTORNO OPERATIVO & EJECUCIÓN (4 FOTOS EJECUTIVAS CON EL ABOGADO EN ESCRITORIO) -->
-    <section id="galeria" style="padding-top: 20px;">
-        <div class="section-header">
-            <h2>Entorno Operativo & Ejecución Jurídica</h2>
-            <p>Atención senior y gestión directa para operaciones mercantiles, estructuración contractual y negociaciones ejecutivas.</p>
-        </div>
-
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80" alt="Consultoría Senior y Firma de Contratos">
-                <div class="gallery-caption">
-                    Gestión Senior & Consultoría Directa
-                    <span>Análisis Estratégico & Firma de Acuerdos</span>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Blindaje Contractual Corporativo">
-                <div class="gallery-caption">
-                    Blindaje Contractual & M&A
-                    <span>Gobernanza & Acuerdos Societarios</span>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80" alt="Auditoría Normativa y Due Diligence">
-                <div class="gallery-caption">
-                    Auditoría Preventiva & Due Diligence
-                    <span>Matriz de Riesgo ISO 31000</span>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80" alt="Negociación y Acuerdos de Inversión">
-                <div class="gallery-caption">
-                    Protección Patrimonial & Inversión
-                    <span>Estructuración Jurídica Transfronteriza</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CATÁLOGO 360° -->
-    <section id="servicios">
-        <div class="section-header">
-            <h2>Catálogo Estratégico de Servicios 360°</h2>
-            <p>Soluciones jurídicas integrales y especializadas diseñadas para proteger activos, garantizar cumplimiento normativo e impulsar inversiones de alto nivel.</p>
-        </div>
-
-        <div class="grid-360">
-            <!-- Corporativo & M&A -->
-            <div class="card-service">
-                <div>
-                    <i class="fa-solid fa-building-shield"></i>
-                    <h3>Derecho Corporativo, M&A & Gobierno Societario</h3>
-                    <ul>
-                        <li>Constitución y reorganización de holdings y estructuras corporativas</li>
-                        <li>Fusiones, Adquisiciones (M&A) y auditoría previa (<i>Due Diligence</i>)</li>
-                        <li>Pactos de accionistas, gobernanza y protocolo de empresas familiares</li>
-                        <li>Auditoría y blindaje de contratos comerciales estratégicos</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Energía & Transición -->
-            <div class="card-service">
-                <span class="badge-special">Estratégico</span>
-                <div>
-                    <i class="fa-solid fa-bolt"></i>
-                    <h3>Energía, Hidrocarburos & Transición Energética</h3>
-                    <ul>
-                        <li>Marcos regulatorios de petróleo, gas, condensados y derivados</li>
-                        <li>Proyectos fotovoltaicos, infraestructura solar y contratos EPC</li>
-                        <li>Gestión de licencias, concesiones y seguridad para capital de inversión</li>
-                        <li>Auditoría ambiental y cumplimiento normativo del sector energético</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Compliance LC/FT & ISO -->
-            <div class="card-service">
-                <span class="badge-special">Estándar ISO</span>
-                <div>
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <h3>Compliance, LC/FT & Gestión de Riesgo (ISO 37001/31000)</h3>
-                    <ul>
-                        <li>Sistemas de Prevención de Legitimación de Capitales (LC/FT/FPADM)</li>
-                        <li>Manuales y arquitectura bajo normativa LODFT, ONDOFT y SUDEBAN</li>
-                        <li>Sistemas Anticorrupción e Integridad bajo norma ISO 37001</li>
-                        <li>Matriz de Riesgo Operativo y Gobernanza bajo ISO 31000 y regulación OFAC</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Constitucional & Garantías -->
-            <div class="card-service">
-                <div>
-                    <i class="fa-solid fa-shield-cat"></i>
-                    <h3>Derecho Constitucional, Amparo & Garantías Procesales</h3>
-                    <ul>
-                        <li>Acciones de Amparo Constitucional de Emergencia y Medidas Cautelares</li>
-                        <li>Protección Tutelar del Debido Proceso, Propiedad Privada y Libre Empresa</li>
-                        <li>Impugnación por Inconstitucionalidad y Confiscatoriedad Tributaria</li>
-                        <li>Control de Legalidad y Anulación de Actos Administrativos</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Derecho Digital & SUSCERTE -->
-            <div class="card-service">
-                <span class="badge-special">Técnico / Digital</span>
-                <div>
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h3>Derecho Digital, Firma Electrónica & SUSCERTE</h3>
-                    <ul>
-                        <li>Acreditación de Firma Digital y Entorno Normativo SUSCERTE</li>
-                        <li>Auditoría, Validez Probatoria y Blindaje de Audiencias Telemáticas</li>
-                        <li>Extracción, Preservación e Impugnación de Evidencia Digital y Mensajería</li>
-                        <li><i>Habeas Data</i> Corporativo y Protección de Reputación Digital</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Tributario & Aduanas -->
-            <div class="card-service">
-                <div>
-                    <i class="fa-solid fa-file-invoice-dollar"></i>
-                    <h3>Derecho Tributario, Fiscalidad & Aduanas</h3>
-                    <ul>
-                        <li>Planificación y optimización fiscal corporativa interna e internacional</li>
-                        <li>Defensa contencioso-tributaria (SENIAT / Tasas Municipales)</li>
-                        <li>Auditoría preventiva de retenciones, IVA, ISLR y parafiscales</li>
-                        <li>Régimen aduanero, valoración, importación y exportación</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Laboral Corporativo -->
-            <div class="card-service">
-                <div>
-                    <i class="fa-solid fa-user-tie"></i>
-                    <h3>Derecho Laboral Corporativo & Seguridad Industrial</h3>
-                    <ul>
-                        <li>Auditorías de nómina, contratos gerenciales y cálculo de prestaciones</li>
-                        <li>Cláusulas de confidencialidad, no competencia y secreto comercial</li>
-                        <li>Cumplimiento de protocolos INPSASEL e higiene y seguridad laboral</li>
-                        <li>Gestión legal de reestructuraciones y negociación colectiva</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Propiedad Intelectual & Tech -->
-            <div class="card-service">
-                <div>
-                    <i class="fa-solid fa-microchip"></i>
-                    <h3>Propiedad Intelectual, Activos Digitales & Tech</h3>
-                    <ul>
-                        <li>Registro y protección de marcas, patentes, lemas y derechos de autor</li>
-                        <li>Términos jurídicos para plataformas web, e-commerce y aplicaciones</li>
-                        <li>Contratos de software, licenciamiento y transferencia tecnológica</li>
-                        <li>Estructura legal para activos digitales, tokenización y tecnología</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Penal Económico -->
-            <div class="card-service">
-                <div>
-                    <i class="fa-solid fa-gavel"></i>
-                    <h3>Penal Corporativo & Económico</h3>
-                    <ul>
-                        <li>Defensa corporativa en delitos financieros, tributarios y de delincuencia organizada</li>
-                        <li>Responsabilidad penal preventiva de administradores y directores</li>
-                        <li>Representación experta ante órganos de investigaciones y control</li>
-                        <li>Estrategias de protección patrimonial frente a medidas preventivas o embargos</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Civil & Inmobiliario -->
-            <div class="card-service">
-                <div>
-                    <i class="fa-solid fa-scale-balanced"></i>
-                    <h3>Derecho Civil, Patrimonial & Inmobiliario</h3>
-                    <ul>
-                        <li>Cobranza corporativa (gestión judicial y extrajudicial de cartera morosa)</li>
-                        <li>Contratos complejos de arrendamiento comercial y desarrollo inmobiliario</li>
-                        <li>Planificación de patrimonio familiar y sucesión empresarial senior</li>
-                        <li>Arbitraje comercial y mecanismos alternativos de resolución de conflictos</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Administrativo & Público -->
-            <div class="card-service">
-                <div>
-                    <i class="fa-solid fa-landmark"></i>
-                    <h3>Derecho Administrativo & Contratación Pública</h3>
-                    <ul>
-                        <li>Licitaciones y contratación estratégica con órganos del Estado</li>
-                        <li>Recursos de reconsideración, jerárquicos y nulidades administrativas</li>
-                        <li>Gestión legal de licencias, permisos operativos y concesiones</li>
-                        <li>Defensa frente a procedimientos sancionatorios públicos</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Internacional -->
-            <div class="card-service">
-                <div>
-                    <i class="fa-solid fa-globe"></i>
-                    <h3>Derecho Internacional Público & Privado (Incluye Exequátur)</h3>
-                    <ul>
-                        <li>Homologación de sentencias extranjeras ante el TSJ (<i>Exequátur</i>)</li>
-                        <li>Estructuración legal para inversiones transfronterizas</li>
-                        <li>Contratación comercial internacional y cláusulas arbitrales globales</li>
-                        <li>Asesoría a capitales extranjeros e inversionistas institucionales</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- TARJETA GANCHO -->
-            <div class="card-service hook-card" style="grid-column: 1 / -1;">
-                <div>
-                    <i class="fa-solid fa-compass" style="color: var(--accent-gold);"></i>
-                    <h3 style="color: var(--accent-gold);">¿Su requerimiento o proyecto abarca
+                <a href="
